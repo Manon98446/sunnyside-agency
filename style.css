@@ -1,0 +1,162 @@
+/*Primary*/
+/*(graphic design text)*/
+/*(photography text)*/
+/*(footer)*/
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0px;
+}
+
+/*header*/
+header {
+  background-image: url("images/orange.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100vw;
+  height: 55vw;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  font-weight: 900;
+  font-size: 5.6rem;
+  color: white;
+  margin: 6.875vw auto 0rem auto;
+  text-transform: uppercase;
+  letter-spacing: 0.875rem;
+  font-family: "Fraunces", serif;
+}
+header .header_arrow {
+  height: 10rem;
+  width: 3rem;
+  margin: 6.875vw auto auto auto;
+}
+
+nav {
+  height: 6.875vw;
+  padding: 0 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.nav_links a:link {
+  list-style: none;
+  padding-left: 3vw;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 12.1428571429vw;
+}
+
+button {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 3vw;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+}
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  color: white;
+}
+
+/*main*/
+section.main_block {
+  display: flex;
+}
+section.main_block div {
+  width: 50vw;
+  height: 42vw;
+  box-sizing: border-box;
+  padding: 15rem 11rem 0rem 16rem;
+}
+section.main_block div h2 {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #24303E;
+  padding-right: 10rem;
+}
+section.main_block div p {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #808397;
+  width: 31vw;
+}
+section.main_block div a.learn_more_yellow {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #24303E;
+  text-decoration: underline;
+  text-decoration-thickness: 40%;
+  text-decoration-color: hsla(51, 100%, 49%, 0.25);
+}
+section.main_block div a.learn_more_yellow:hover {
+  text-decoration-color: #FAD400;
+}
+section.main_block div a.learn_more_pink {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #24303E;
+  text-decoration: underline;
+  text-decoration-thickness: 40%;
+  text-decoration-color: hsla(7, 99%, 70%, 0.25);
+}
+section.main_block div a.learn_more_pink:hover {
+  text-decoration-color: #FE7766;
+}
+section.main_block:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+section.main_block .main_block_egg {
+  background-image: url("images/egg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.main_block .main_block_cup {
+  background-image: url("images/cup.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.main_block .main_block_cherry {
+  background-image: url("images/cherry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.main_block .main_block_mandarine {
+  background-image: url("images/mandarine.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*# sourceMappingURL=style.css.map */

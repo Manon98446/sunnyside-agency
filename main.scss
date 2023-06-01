@@ -1,0 +1,108 @@
+@import "partials/variables";
+$width_header:100vw;
+$height_header:calc($width-header * 0.55);
+
+@mixin background_image($url_image){
+    background-image: #{$url_image};
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    margin: 0px;
+}
+/*header*/
+header{
+    @include background_image(url("images/orange.svg"));
+    max-width: $width_header;
+    height: $height_header;
+    display:flex;
+    flex-direction: column;
+    h1{
+        font-weight: 900;
+        font-size: 5.6rem;
+        color: white;
+        margin: calc($height_header/8) auto 0rem auto ;
+        text-transform: uppercase;
+        letter-spacing: 0.875rem;
+        font-family: 'Fraunces', serif;
+    }
+    .header_arrow{
+        height: 10rem;
+        width: 3rem;
+        margin: calc($height_header/8) auto auto auto;
+    }
+}
+
+@import "partials/navbar";
+
+/*main*/
+@mixin learn_more ($color){
+    font-family: 'Fraunces';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#24303E;
+    text-decoration: underline;
+    text-decoration-thickness: 40%;  
+    text-decoration-color:#{$color};
+    
+}
+
+section.main_block{
+    display: flex;
+    div{
+        width: calc($width_header/2);
+        height:calc($width_header*0.42);
+        box-sizing: border-box;
+        padding: 15rem 11rem 0rem 16rem;
+        h2{
+            font-family: 'Fraunces', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color:#24303E;
+            padding-right: 10rem;
+        }
+        p{
+            font-family: 'Barlow';
+            font-size: 1.8rem;
+            font-weight: 600;
+            color:#808397;
+            width: calc($width_header*0.31);
+        }
+        a.learn_more_yellow{
+            @include learn_more(hsla(51, 100%, 49%, 0.25));
+            &:hover{
+                text-decoration-color: #FAD400;
+            }
+        }
+        a.learn_more_pink{
+            @include learn_more( hsla(7, 99%, 70%, 0.25));
+            &:hover{
+                text-decoration-color: #FE7766;
+            }
+        }
+        
+    }
+    &:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse
+    }
+    .main_block_egg{
+        @include background_image(url("images/egg.svg"));
+    }
+    .main_block_cup{
+        @include background_image(url("images/cup.svg"));
+    }
+    .main_block_cherry{
+        @include background_image(url("images/cherry.svg"));
+    }
+    .main_block_mandarine{
+        @include background_image(url("images/mandarine.svg"));
+    }
+}
